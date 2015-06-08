@@ -301,11 +301,9 @@ Exer.nest18 = function() {
 //=================================//
 Exer.declaration1 = function () {  //
 //=================================//
-function testNinja{
-  console.log("You gotta believe!");  
+var testNinja = function(){
+  console.log("You gotta believe!");
 }
-
-testNinja();
 
 
 //=============================//
@@ -321,8 +319,11 @@ testNinja();
 //=================================//
 Exer.declaration2 = function () {  //
 //=================================//
+  (trainNinja("punch"));
 
-
+  function trainNinja(move){
+    return move;
+  }
 
 };  // wrapper end
 
